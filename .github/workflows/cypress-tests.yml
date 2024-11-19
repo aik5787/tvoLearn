@@ -1,34 +1,19 @@
-name: E2E TVOLEARN
+name: E2E Tests on Firefox
 
 on:
-  workflow_dispatch:
-    inputs:
-      branch:
-        description: 'Branch to test'
-        required: false
   pull_request:
     types: [opened, reopened, edited, synchronize]
 
 jobs:
-  Cypress-Run-Chrome:
+  cypress-run-firefox:
     runs-on: ubuntu-latest
-    name: E2E on Chrome
+    name: E2E on Firefox
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.1
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Set up Cypress
         uses: cypress-io/github-action@v6.6.1
         with:
-          browser: chrome
-          working-directory: ./
-        continue-on-error: true 
+          browser: firefox
       - name: Run Cypress tests
-        run: npm run test:parallel:chrome
-        working-directory: ./
-      - name: Upload Mochawesome reports chrome
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: mochawesome-report-chrome
-          path: ./mochawesome-report-chrome/
-          
+        run: npm install && npm run test:parallel:firefox
