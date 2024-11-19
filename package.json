@@ -18,7 +18,6 @@
     "test:parallel:chrome": "npm run clean:reports-chrome && npm-run-all --parallel --continue-on-error test:header:chrome test:homepage:chrome test:learningresources:chrome && npm run test:merge-reports-chrome && npm run  test:generate-report-chrome",
     "test:parallel:firefox": "npm run clean:reports-firefox && npm-run-all --parallel --continue-on-error test:header:firefox test:homepage:firefox test:learningresources:firefox && npm run test:merge-reports-firefox && npm run test:generate-report-firefox",
     "test:smoke:chrome": "npm run clean:reports-chrome && CYPRESS_REPORT_DIR=mochawesome-report-chrome npx cypress run --env grepTags=@smoke --browser chrome && npm-run-all test:merge-reports-chrome test:generate-report-chrome"
-   
   },
   "keywords": [],
   "author": "",
