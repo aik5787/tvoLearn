@@ -3,6 +3,7 @@ import learningActivity1Page from "../../../../../../pages/grade1/mathematics/nu
 
 describe("Learning 1 functionality", () => {
   beforeEach(() => {
+    cy.errorHandler()
     cy.visit("/pages/grade-1-mathematics-number-learning-activity-1");
   });
 

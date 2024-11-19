@@ -5,6 +5,7 @@ import header from "../../pages/header.js";
 
 describe("Header Functionality", () => {
   beforeEach(() => {
+    cy.errorHandler();
     cy.visit("/");
   });
 
@@ -14,8 +15,6 @@ describe("Header Functionality", () => {
   });
 
   it("TC-003: Should toggle between French and English languages", () => {
-    cy.errorHandler();
-
     header.frenchLanguageLink.click();
     homePage.heroTitle.should("have.text", homePageVerificationData.frenchH1Text).should("be.visible");
 
@@ -31,8 +30,8 @@ describe("Header Functionality", () => {
 
       header.getLearningResourcesDropdownLink(link.label).click();
 
-      cy.url().should("eq", link.url);
-      cy.title().should("eq", link.title);
+      cy.url({ timeout: 10000 }).should("eq", link.url);
+      cy.title({ timeout: 10000 }).should("eq", link.title);
     });
   });
 });

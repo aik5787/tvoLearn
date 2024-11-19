@@ -3,6 +3,7 @@ import mathematicsVerificationData from "../../../../../fixtures/learningResourc
 
 describe("Grade 1 Mathematics functionality", () => {
   beforeEach(() => {
+    cy.errorHandler()
     cy.visit("/pages/grade-1-mathematics");
   });
 

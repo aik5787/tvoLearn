@@ -3,6 +3,7 @@ import homePage from "../../pages/homePage.js";
 
 describe("Home Page Load", () => {
   beforeEach(() => {
+    cy.errorHandler();
     cy.visit("/");
   });
 

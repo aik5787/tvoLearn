@@ -2,6 +2,7 @@ import grade1VerificationData from "../../../../fixtures/learningResources/grade
 
 describe("Grade 1 functionality", () => {
   beforeEach(() => {
+    cy.errorHandler()
     cy.visit("/pages/grade-1");
   });
 
