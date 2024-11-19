@@ -30,8 +30,8 @@ describe("Header Functionality", () => {
 
       header.getLearningResourcesDropdownLink(link.label).click();
 
-      cy.url({ timeout: 10000 }).should("eq", link.url);
-      cy.title({ timeout: 10000 }).should("eq", link.title);
+      cy.url().should("eq", link.url);
+      cy.title().should("eq", link.title);
     });
   });
 });
