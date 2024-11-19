@@ -1,0 +1,165 @@
+{
+    "helpfulTipsTitle": "Helpful Tips | TVO Learn",
+    "helpfulTipsUrl": "https://tvolearn.com/pages/helpful-tips",
+    "sections": [
+      {
+        "name": "Number",
+        "activities": [
+          "Counting to 50",
+          "Reading and Representing Numbers",
+          "Number Order",
+          "Let's Estimate!",
+          "Skip Counting",
+          "Fair Share Problems",
+          "Halves and Fourths",
+          "Equal Sharing",
+          "Adding Numbers",
+          "Subtracting Numbers",
+          "Mental Math Strategies",
+          "Equal Group Problems Up to 10"
+        ]
+      },
+      {
+        "name": "Algebra",
+        "activities": [
+          "What's a Pattern?",
+          "Equal Expressions",
+          "Identifying the Core",
+          "Emoji Equations",
+          "Labelling Patterns",
+          "Coding Unplugged (Find the Mistakes)",
+          "Number Patterns",
+          "Coding Unplugged Mazes",
+          "Box Number Patterns",
+          "Origami Coding",
+          "Creating Equations",
+          "Missing Numbers"
+        ]
+      },
+      {
+        "name": "Data",
+        "activities": [
+          "Sorting",
+          "Tally Tables",
+          "Sorting Rules and Tally Tables",
+          "Asking Questions",
+          "Concrete Graphs",
+          "Types of Graphs",
+          "Ordering Data",
+          "Using Graphs to Answer Questions",
+          "Introduction to Probability",
+          "What is the Likelihood?",
+          "Comparing Sets of Data",
+          "Checking Frequency"
+        ]
+      },
+      {
+        "name": "Spatial Sense",
+        "activities": [
+          "Two-Dimensional Shapes",
+          "Sorting Three-Dimensional Objects",
+          "Finding Shapes in Objects",
+          "Matching Halves",
+          "Describing Location",
+          "Location",
+          "Giving and Following Directions",
+          "Measuring Length",
+          "Measuring Area",
+          "Comparing and Ordering by Attributes",
+          "Reading and Using Calendars",
+          "Months and Seasons"
+        ]
+      },
+      {
+        "name": "Financial Literacy",
+        "activities": [
+          "Understanding Coins",
+          "What is Money?",
+          "Understanding Bills",
+          "Giving Back",
+          "The Cost of Buying",
+          "Adding Up",
+          "Making Change",
+          "Earning Money",
+          "Exploring Coins",
+          "Understanding Coin Value",
+          "Understanding Value",
+          "Grocery Shopping"
+        ]
+      }
+    ],
+    "learningLinks": [
+      {
+        "href": "#jumpto-lesson-packs",
+        "sectionId": "strandsTop"
+      },
+      {
+        "href": "#jumpto-resources",
+        "sectionId": "resources"
+      },
+      {
+        "href": "#jumpto-activities",
+        "sectionId": "s-754186fe-5a10-471f-acc6-228f7affa71c"
+      },
+      {
+        "href": "#jumpto-vocabulary",
+        "sectionId": "s-c2957071-6607-4e21-95c9-deaedec49fc8"
+      }
+    ],
+    "videoResourcesForLearningLinks": [
+      {
+        "href": "https://www.tvokids.com/school-age/videos/find-missing-number-equations"
+      },
+      {
+        "href": "https://www.tvokids.com/school-age/videos/homework-zone-mathematics/understanding-money"
+      },
+      {
+        "href": "https://www.tvokids.com/preschool/numberblocks-k-2-math/videos/blockzilla"
+      },
+      {
+        "href": "https://www.tvokids.com/school-age/tvokids-teacher-power-hour/videos/counting-50-primary-lesson-tvokids"
+      },
+      {
+        "href": "https://www.tvokids.com/school-age/tvokids-teacher-power-hour/videos/fair-share-primary-lesson-tvokids"
+      },
+      {
+        "href": "https://www.tvokids.com/school-age/tvokids-teacher-power-hour/videos/make-bake-silent-e-cake-primary-lesson-tvokids"
+      },
+      {
+        "href": "https://www.tvokids.com/school-age/tvokids-teacher-power-hour/videos/lets-make-magic-primary-lesson-tvokids"
+      },
+      {
+        "href": "https://www.tvokids.com/school-age/mathxplosion-gr-1-4-math/videos/same-different"
+      },
+      {
+        "href": "https://www.tvokids.com/school-age/mathxplosion/videos/folded-paper-hopping-frog"
+      },
+      {
+        "href": "https://www.tvokids.com/school-age/odd-squad/videos/robert-plant-game-time"
+      },
+      {
+        "href": "https://www.tvokids.com/school-age/videos/homework-zone-mathematics/homework-zone-video-shapes"
+      }
+    ],
+    "gameResourcesForLearningLinks":[
+      {
+        "href": "https://mpower.tvo.org/#/login/?play=SportAndSortGameV2"
+      },
+      {
+        "href": "https://mpower.tvo.org/#/login/?play=MoneyMidwayGameV2"
+      },
+      {
+        "href": "https://mpower.tvo.org/#/login/?play=NumberSenseDoctorGameV2"
+      },
+      {
+        "href": "https://mpower.tvo.org/#/login/?play=GeoboardGardenGameV2"
+      },
+      {
+        "href": "https://mpower.tvo.org/#/login/?play=MeasurementGroceryStoreGame"
+      },
+      {
+        "href": "https://mpower.tvo.org/#/login/?play=PatternBlocksLibraryGame"
+      }
+    ]
+  }
+  
