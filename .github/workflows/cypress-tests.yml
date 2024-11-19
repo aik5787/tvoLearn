@@ -15,5 +15,7 @@ jobs:
         uses: cypress-io/github-action@v6.6.1
         with:
           browser: firefox
+      - name: Install dependencies
+        run: npm install
       - name: Run Cypress tests
-        run: npm install && npm run test:parallel:firefox
+        run: npx cypress run --browser firefox
