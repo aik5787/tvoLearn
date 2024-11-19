@@ -1,4 +1,4 @@
-name: E2E Tests
+name: E2E TVOLEARN
 
 on:
   workflow_dispatch:
@@ -10,36 +10,35 @@ on:
     types: [opened, reopened, edited, synchronize]
 
 jobs:
-  Cypress-Run-Firefox:
-    runs-on: macos-latest
-    name: E2E on Firefox
+  Cypress-Run-Chrome:
+    runs-on: ubuntu-latest
+    name: E2E on Chrome
     steps:
-      # Шаг 1: Клонирование репозитория
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # Шаг 2: Установка Node.js
-      - name: Setup Node.js
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' # Укажите ту же версию Node.js, что и локально
+          node-version: '16'  # Укажите нужную версию Node.js
 
-      # Шаг 3: Установка зависимостей
       - name: Install dependencies
-        run: npm ci
+        run: npm ci  # Это установит зависимости, указанные в package-lock.json
 
-      # Шаг 4: Установка Firefox
-      - name: Install Firefox
-        run: brew install --cask firefox
+      - name: Set up Cypress
+        uses: cypress-io/github-action@v6.6.1
+        with:
+          browser: chrome
+          working-directory: ./
+        continue-on-error: true 
 
-      # Шаг 5: Запуск параллельных тестов через ваш скрипт
-      - name: Run Cypress tests in parallel on Firefox
-        run: npm run test:parallel:firefox
+      - name: Run Cypress tests
+        run: npm run test:parallel:chrome
+        working-directory: ./
 
-      # Шаг 6: Загрузка отчётов Mochawesome
-      - name: Upload Mochawesome report
+      - name: Upload Mochawesome reports chrome
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: mochawesome-report-firefox
-          path: mochawesome-report-firefox/
+          name: mochawesome-report-chrome
+          path: ./mochawesome-report-chrome/

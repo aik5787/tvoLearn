@@ -24,7 +24,7 @@ describe("Grade 1 Mathematics functionality", () => {
     });
   });
 
-  it("TC-00: Should verify that video Resources For Learning have correct links", () => {
+  it("TC-008: Should verify that video Resources For Learning have correct links", () => {
     mathematicsPage.videoLearningResource.should("have.length", mathematicsVerificationData.videoResourcesForLearningLinks.length);
     
     mathematicsPage.videoLearningResource.each((element, index) => {
