@@ -31,28 +31,25 @@ jobs:
         with:
           name: mochawesome-report-chrome
           path: ./mochawesome-report-chrome/
-          
 
-  Cypress-Run-Firefox:
-    runs-on: macos-latest
-    name: E2E on Firefox
+  Cypress-Run-Electron:
+    runs-on: ubuntu-latest
+    name: E2E on Electron
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
-      - name: Install Firefox
-        run: brew install --cask firefox 
       - name: Set up Cypress
         uses: cypress-io/github-action@v6.6.1
         with:
-          browser: firefox
+          browser: electron
           working-directory: ./
         continue-on-error: true 
       - name: Run Cypress tests
-        run: npm run test:parallel:firefox
+        run: npm run test:parallel:electron
         working-directory: ./
-      - name: Upload Mochawesome reports firefox
+      - name: Upload Mochawesome reports electron
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: mochawesome-report-firefox
-          path: ./mochawesome-report-firefox/
+          name: mochawesome-report-electron
+          path: ./mochawesome-report-electron/
