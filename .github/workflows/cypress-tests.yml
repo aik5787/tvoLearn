@@ -1,21 +1,21 @@
-name: E2E Tests on Firefox
+name: Cypress Tests
 
-on:
-  pull_request:
-    types: [opened, reopened, edited, synchronize]
+on: 
+  push:
+    branches:
+      - main  # или любой другой бранч, на который вы хотите реагировать
 
 jobs:
-  cypress-run-firefox:
-    runs-on: ubuntu-latest
-    name: E2E on Firefox
+  cypress-run:
+    runs-on: ubuntu-22.04
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
-      - name: Set up Cypress
-        uses: cypress-io/github-action@v6.6.1
-        with:
-          browser: firefox
+
       - name: Install dependencies
         run: npm install
-      - name: Run Cypress tests
-        run: npx cypress run --browser firefox
+
+      - name: Run Cypress tests in Electron
+        uses: cypress-io/github-action@v6
+        with:
+          browser: electron
