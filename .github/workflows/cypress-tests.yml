@@ -23,14 +23,14 @@ jobs:
           working-directory: ./
         continue-on-error: true 
       - name: Run Cypress tests
-        run: npm run test:parallel:chrome
+        run: npm run test:all:chrome
         working-directory: ./
       - name: Upload Mochawesome reports chrome
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: mochawesome-report-chrome
-          path: ./mochawesome-report-chrome/
+          path: mochawesome-report-chrome/
           
 
   Cypress-Run-Firefox:
@@ -48,11 +48,11 @@ jobs:
           working-directory: ./
         continue-on-error: true 
       - name: Run Cypress tests
-        run: npm run test:parallel:firefox
+        run: npm run test:all:firefox
         working-directory: ./
       - name: Upload Mochawesome reports firefox
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: mochawesome-report-firefox
-          path: ./mochawesome-report-firefox/
+          path: mochawesome-report-firefox/
