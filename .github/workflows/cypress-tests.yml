@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: mochawesome-report-chrome
-          path: ./
+          path: ./mochawesome-report-chrome/
           
 
   Cypress-Run-Firefox:
@@ -55,4 +55,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: mochawesome-report-firefox
-          path: ./
+          path: ./mochawesome-report-firefox/
