@@ -16,14 +16,4 @@ describe("Learning 1 functionality", () => {
     learningActivity1Page.iframe.should("exist");
     learningActivity1Page.video.should("be.visible");
   });
-
-  it.skip("TC-012: Should start video playback and ensure it's not paused", () => {
-    learningActivity1Page.iframe.should("exist");
-
-    learningActivity1Page.video.should("be.visible").then(($video) => {
-      const videoElement = $video[0];
-      videoElement.play();
-      expect(videoElement.paused).to.equal(false);
-    });
-  });
 });

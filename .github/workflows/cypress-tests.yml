@@ -1,21 +1,34 @@
-name: Cypress Tests
+name: E2E TVOLEARN
 
-on: 
-  push:
-    branches:
-      - cicd  # или любой другой бранч, на который вы хотите реагировать
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to test'
+        required: false
+  pull_request:
+    types: [opened, reopened, edited, synchronize]
 
 jobs:
-  cypress-run:
-    runs-on: ubuntu-22.04
+  Cypress-Run-Chrome:
+    runs-on: ubuntu-latest
+    name: E2E on Chrome
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run Cypress tests in Electron
-        uses: cypress-io/github-action@v6
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Set up Cypress
+        uses: cypress-io/github-action@v6.6.1
         with:
-          browser: electron
+          browser: chrome
+          working-directory: ./
+        continue-on-error: true 
+      - name: Run Cypress tests
+        run: npm run test:parallel:chrome
+        working-directory: ./
+      - name: Upload Mochawesome reports chrome
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawesome-report-chrome
+          path: ./mochawesome-report-chrome/
+          
