@@ -1,0 +1,473 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 12,
+    "passes": 10,
+    "pending": 2,
+    "failures": 0,
+    "testsRegistered": 12,
+    "passPercent": 83.33333333333333,
+    "pendingPercent": 16.666666666666668,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-11-19T04:17:44.145Z",
+    "end": "2024-11-19T04:18:05.262Z",
+    "duration": 21117
+  },
+  "results": [
+    {
+      "uuid": "7599452b-b1bb-4e7d-b443-eeecc13b29b8",
+      "title": "",
+      "fullFile": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
+      "file": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "36285209-0716-49f2-90aa-4254ae7138d7",
+          "title": "Home Page Load",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-001: Should load the Home Page with correct title and hero text",
+              "fullTitle": "Home Page Load TC-001: Should load the Home Page with correct title and hero text",
+              "timedOut": null,
+              "duration": 3616,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should(\"eq\", _verificationData.default.englishTitle);\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.englishH1Text).should(\"be.visible\");",
+              "err": {},
+              "uuid": "fe8fb85a-9367-4335-8eb6-cb11f8b2b980",
+              "parentUUID": "36285209-0716-49f2-90aa-4254ae7138d7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fe8fb85a-9367-4335-8eb6-cb11f8b2b980"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3616,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "846c2676-24fb-4e7c-9d45-d8aba61bc2ad",
+      "title": "",
+      "fullFile": "cypress/e2e/learningResources/grades/grade1/grade1.spec.cy.js",
+      "file": "cypress/e2e/learningResources/grades/grade1/grade1.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "17781033-ed5e-49cd-b6e3-9f85a1925b30",
+          "title": "Grade 1 functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-005: Should display frames and navigate correctly when clicking on each",
+              "fullTitle": "Grade 1 functionality TC-005: Should display frames and navigate correctly when clicking on each",
+              "timedOut": null,
+              "duration": 7310,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_verificationData.default.subjects.forEach(subjectData => {\n  cy.contains(subjectData.subject).should(\"be.visible\").click();\n  cy.url().should(\"eq\", subjectData.url);\n  cy.title().should(\"eq\", subjectData.title);\n  cy.go(\"back\");\n});",
+              "err": {},
+              "uuid": "a2b7bde5-32e4-42de-9d73-e907052fda08",
+              "parentUUID": "17781033-ed5e-49cd-b6e3-9f85a1925b30",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a2b7bde5-32e4-42de-9d73-e907052fda08"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7310,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7bf66606-8c18-433b-9ba0-361cf897dd06",
+      "title": "",
+      "fullFile": "cypress/e2e/header/headerFunctionality.spec.cy.js",
+      "file": "cypress/e2e/header/headerFunctionality.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f174135d-5e68-4672-968b-ec03aec6dd44",
+          "title": "Header Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-002: Should display the logo and redirect to the Home Page on click",
+              "fullTitle": "Header Functionality TC-002: Should display the logo and redirect to the Home Page on click",
+              "timedOut": null,
+              "duration": 5727,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_header.default.logoImage.should(\"be.visible\").click();\ncy.title().should(\"eq\", _verificationData.default.englishTitle);",
+              "err": {},
+              "uuid": "6a15015d-93b2-4f0a-8a16-8fa52184d634",
+              "parentUUID": "f174135d-5e68-4672-968b-ec03aec6dd44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-003: Should toggle between French and English languages",
+              "fullTitle": "Header Functionality TC-003: Should toggle between French and English languages",
+              "timedOut": null,
+              "duration": 1760,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_header.default.frenchLanguageLink.click();\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.frenchH1Text).should(\"be.visible\");\n_header.default.englishLanguageLink.click();\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.englishH1Text).should(\"be.visible\");",
+              "err": {},
+              "uuid": "3e2c352d-81e0-4b6b-86fa-e9ae540e1afb",
+              "parentUUID": "f174135d-5e68-4672-968b-ec03aec6dd44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-004: Should verify 'Learning Resources' button opens dropdown and links lead to correct pages",
+              "fullTitle": "Header Functionality TC-004: Should verify 'Learning Resources' button opens dropdown and links lead to correct pages",
+              "timedOut": null,
+              "duration": 2254,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_verificationData2.default.learningResourcesLinks.forEach(link => {\n  _header.default.learningResourcesButton.click();\n  _header.default.learningResourcesDropdown.should(\"be.visible\");\n  _header.default.getLearningResourcesDropdownLink(link.label).click();\n  cy.url({\n    timeout: 10000\n  }).should(\"eq\", link.url);\n  cy.title({\n    timeout: 10000\n  }).should(\"eq\", link.title);\n});",
+              "err": {},
+              "uuid": "91927ad2-fab6-4512-819b-6d5dfc3f9a80",
+              "parentUUID": "f174135d-5e68-4672-968b-ec03aec6dd44",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6a15015d-93b2-4f0a-8a16-8fa52184d634",
+            "3e2c352d-81e0-4b6b-86fa-e9ae540e1afb",
+            "91927ad2-fab6-4512-819b-6d5dfc3f9a80"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9741,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ecf187cc-2906-4f6f-b252-8600a8dd0d70",
+      "title": "",
+      "fullFile": "cypress/e2e/learningResources/grades/grade1/Mathematics/mathematics.spec.cy.js",
+      "file": "cypress/e2e/learningResources/grades/grade1/Mathematics/mathematics.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "83beea74-a8f1-4cc3-b7dd-24e2d5f03b00",
+          "title": "Grade 1 Mathematics functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-006: Should display 'Helpful Tips' link and navigate correctly on click",
+              "fullTitle": "Grade 1 Mathematics functionality TC-006: Should display 'Helpful Tips' link and navigate correctly on click",
+              "timedOut": null,
+              "duration": 2996,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_mathematicsPage.default.helpfulTipsLink.should(\"be.visible\").click();\ncy.url().should(\"eq\", _verificationData.default.helpfulTipsUrl);\ncy.title().should(\"eq\", _verificationData.default.helpfulTipsTitle);",
+              "err": {},
+              "uuid": "e9116f76-5e36-46d2-8ed2-b57934a1ee2d",
+              "parentUUID": "83beea74-a8f1-4cc3-b7dd-24e2d5f03b00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-007: Should verify Mathematics sections and its activities",
+              "fullTitle": "Grade 1 Mathematics functionality TC-007: Should verify Mathematics sections and its activities",
+              "timedOut": null,
+              "duration": 2212,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_verificationData.default.sections.forEach(section => {\n  cy.contains(\"button\", section.name).should(\"be.visible\").click();\n  section.activities.forEach(activity => {\n    cy.contains(activity).should(\"be.visible\");\n  });\n});",
+              "err": {},
+              "uuid": "f129dbb8-94ee-4051-846a-28472efc289a",
+              "parentUUID": "83beea74-a8f1-4cc3-b7dd-24e2d5f03b00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-00: Should verify that video Resources For Learning have correct links",
+              "fullTitle": "Grade 1 Mathematics functionality TC-00: Should verify that video Resources For Learning have correct links",
+              "timedOut": null,
+              "duration": 1154,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_mathematicsPage.default.videoLearningResource.should(\"have.length\", _verificationData.default.videoResourcesForLearningLinks.length);\n_mathematicsPage.default.videoLearningResource.each((element, index) => {\n  const expectedLink = _verificationData.default.videoResourcesForLearningLinks[index].href;\n  cy.wrap(element).should(\"have.attr\", \"href\", expectedLink);\n});",
+              "err": {},
+              "uuid": "17494fb3-c67f-461d-954b-ac89fad8273f",
+              "parentUUID": "83beea74-a8f1-4cc3-b7dd-24e2d5f03b00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-009: Should verify that game Resources For Learning have correct links",
+              "fullTitle": "Grade 1 Mathematics functionality TC-009: Should verify that game Resources For Learning have correct links",
+              "timedOut": null,
+              "duration": 1236,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_mathematicsPage.default.gameLearningResource.should(\"have.length\", _verificationData.default.gameResourcesForLearningLinks.length);\n_mathematicsPage.default.gameLearningResource.each((element, index) => {\n  const expectedLink = _verificationData.default.gameResourcesForLearningLinks[index].href;\n  cy.wrap(element).should(\"have.attr\", \"href\", expectedLink);\n});",
+              "err": {},
+              "uuid": "7605a014-db51-46fe-af08-b220d4b5d4eb",
+              "parentUUID": "83beea74-a8f1-4cc3-b7dd-24e2d5f03b00",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e9116f76-5e36-46d2-8ed2-b57934a1ee2d",
+            "f129dbb8-94ee-4051-846a-28472efc289a",
+            "17494fb3-c67f-461d-954b-ac89fad8273f",
+            "7605a014-db51-46fe-af08-b220d4b5d4eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7598,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e8bab938-10a6-425e-b0cf-d6d0a31c94bf",
+      "title": "",
+      "fullFile": "cypress/e2e/learningResources/grades/grade1/Mathematics/number/learningActivity1.spec.cy.js",
+      "file": "cypress/e2e/learningResources/grades/grade1/Mathematics/number/learningActivity1.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6a0daa11-a702-44f9-b133-dbce498962bc",
+          "title": "Learning 1 functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-010: Should load Learning Activity 1 Page with correct URL and Title",
+              "fullTitle": "Learning 1 functionality TC-010: Should load Learning Activity 1 Page with correct URL and Title",
+              "timedOut": null,
+              "duration": 3640,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should(\"eq\", _verificationData.default.learningActivity1Url);\ncy.title().should(\"eq\", _verificationData.default.learningActivity1Title);",
+              "err": {},
+              "uuid": "a2e5af2a-47b5-4037-a1f9-ddd90ee58fbb",
+              "parentUUID": "6a0daa11-a702-44f9-b133-dbce498962bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-011: Should have a video player with a valid source",
+              "fullTitle": "Learning 1 functionality TC-011: Should have a video player with a valid source",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "_learningActivity.default.iframe.should(\"exist\");\n_learningActivity.default.video.should(\"be.visible\").and(\"have.attr\", \"src\").and(\"match\", new RegExp(_verificationData.default.videoSrc));",
+              "err": {},
+              "uuid": "8d01bc5e-6f93-460c-96d1-1c8fc4462da9",
+              "parentUUID": "6a0daa11-a702-44f9-b133-dbce498962bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-012: Should start video playback and ensure it's not paused",
+              "fullTitle": "Learning 1 functionality TC-012: Should start video playback and ensure it's not paused",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "_learningActivity.default.iframe.should(\"exist\");\n_learningActivity.default.video.should(\"be.visible\").then($video => {\n  const videoElement = $video[0];\n  videoElement.play();\n  expect(videoElement.paused).to.equal(false);\n});",
+              "err": {},
+              "uuid": "7c57ba80-6982-4d80-94cf-68fc8663dabd",
+              "parentUUID": "6a0daa11-a702-44f9-b133-dbce498962bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a2e5af2a-47b5-4037-a1f9-ddd90ee58fbb"
+          ],
+          "failures": [],
+          "pending": [
+            "8d01bc5e-6f93-460c-96d1-1c8fc4462da9",
+            "7c57ba80-6982-4d80-94cf-68fc8663dabd"
+          ],
+          "skipped": [],
+          "duration": 3640,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report-electron/.jsons",
+        "overwrite": false,
+        "showPassed": true,
+        "html": false,
+        "json": true,
+        "alwaysGenerateReport": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

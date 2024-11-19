@@ -16,13 +16,16 @@
     "test:generate-report-chrome": "marge mochawesome-report-chrome/merged-report-chrome.json -o mochawesome-report-chrome",
     "test:generate-report-firefox": "marge mochawesome-report-firefox/merged-report-firefox.json -o mochawesome-report-firefox",
     "test:parallel:chrome": "npm run clean:reports-chrome && npm-run-all --parallel --continue-on-error test:header:chrome test:homepage:chrome test:learningresources:chrome && npm run test:merge-reports-chrome && npm run  test:generate-report-chrome",
-    "test:parallel:firefox": "npm run clean:reports-firefox && npm-run-all --parallel --continue-on-error test:header:electron test:homepage:electron test:learningresources:electron && npm run test:merge-reports-firefox && npm run test:generate-report-firefox",
+    "test:parallel:electron": "npm run clean:reports-electron && npm-run-all --parallel --continue-on-error test:header:electron test:homepage:electron test:learningresources:electron && npm run test:merge-reports-electron && npm run test:generate-report-electron",
     "test:all:chrome": "npm run clean:reports-chrome && CYPRESS_REPORT_DIR=mochawesome-report-chrome npx cypress run --browser chrome && npm-run-all test:merge-reports-chrome test:generate-report-chrome",
     "test:all:firefox": "npm run clean:reports-firefox && CYPRESS_REPORT_DIR=mochawesome-report-firefox npx cypress run --browser firefox --headless && npm-run-all test:merge-reports-firefox test:generate-report-firefox",
     "test:smoke:chrome": "npm run clean:reports-chrome && CYPRESS_REPORT_DIR=mochawesome-report-chrome npx cypress run --env grepTags=@smoke --browser chrome && npm-run-all test:merge-reports-chrome test:generate-report-chrome",
     "test:header:electron": "CYPRESS_REPORT_DIR=mochawesome-report-electron cypress run --spec 'cypress/e2e/header/**/*.js' --browser electron --headless",
     "test:homepage:electron": "CYPRESS_REPORT_DIR=mochawesome-report-electron cypress run --spec 'cypress/e2e/homePage/**/*.js' --browser electron --headless",
-    "test:learningresources:electron": "CYPRESS_REPORT_DIR=mochawesome-report-electron cypress run --spec 'cypress/e2e/learningResources/**/*.js' --browser electron --headless"
+    "test:learningresources:electron": "CYPRESS_REPORT_DIR=mochawesome-report-electron cypress run --spec 'cypress/e2e/learningResources/**/*.js' --browser electron --headless",
+    "clean:reports-electron": "rimraf downloads && rimraf mochawesome-report-electron",
+    "test:merge-reports-electron": "mochawesome-merge mochawesome-report-electron/.jsons/*.json > mochawesome-report-electron/merged-report-electron.json",
+    "test:generate-report-electron": "marge mochawesome-report-electron/merged-report-electron.json -o mochawesome-report-electron"
   },
   "keywords": [],
   "author": "",

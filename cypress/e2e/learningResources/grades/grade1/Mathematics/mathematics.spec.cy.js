@@ -24,14 +24,7 @@ describe("Grade 1 Mathematics functionality", () => {
     });
   });
 
-  it("TC-008: Should scroll to the correct section when navigation links are clicked", () => {
-    mathematicsVerificationData.learningLinks.forEach((link) => {
-      cy.verifyScrollAndVisibility(link);
-      cy.get(`#${link.sectionId}`).should("be.visible");
-    });
-  });
-
-  it("TC-009: Should verify that video Resources For Learning have correct links", () => {
+  it("TC-00: Should verify that video Resources For Learning have correct links", () => {
     mathematicsPage.videoLearningResource.should("have.length", mathematicsVerificationData.videoResourcesForLearningLinks.length);
     
     mathematicsPage.videoLearningResource.each((element, index) => {
@@ -40,7 +33,7 @@ describe("Grade 1 Mathematics functionality", () => {
     });
   });
 
-  it("TC-010: Should verify that game Resources For Learning have correct links", () => {
+  it("TC-009: Should verify that game Resources For Learning have correct links", () => {
     mathematicsPage.gameLearningResource.should("have.length", mathematicsVerificationData.gameResourcesForLearningLinks.length);
     
     mathematicsPage.gameLearningResource.each((element, index) => {

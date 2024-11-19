@@ -7,17 +7,17 @@ describe("Learning 1 functionality", () => {
     cy.visit("/pages/grade-1-mathematics-number-learning-activity-1");
   });
 
-  it("TC-011: Should load Learning Activity 1 Page with correct URL and Title", () => {
+  it("TC-010: Should load Learning Activity 1 Page with correct URL and Title", () => {
     cy.url().should("eq", numVerificationData.learningActivity1Url);
     cy.title().should("eq", numVerificationData.learningActivity1Title);
   });
 
-  it.skip("TC-012: Should have a video player with a valid source", () => {
+  it.skip("TC-011: Should have a video player with a valid source", () => {
     learningActivity1Page.iframe.should("exist");
     learningActivity1Page.video.should("be.visible").and("have.attr", "src").and("match", new RegExp(numVerificationData.videoSrc));
   });
 
-  it.skip("TC-013: Should start video playback and ensure it's not paused", () => {
+  it.skip("TC-012: Should start video playback and ensure it's not paused", () => {
     learningActivity1Page.iframe.should("exist");
 
     learningActivity1Page.video.should("be.visible").then(($video) => {
