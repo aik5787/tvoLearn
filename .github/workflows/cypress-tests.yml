@@ -23,7 +23,7 @@ jobs:
           working-directory: ./
         continue-on-error: true 
       - name: Run Cypress tests
-        run: npm run test:all:chrome
+        run: npm run test:parallel:chrome
         working-directory: ./
       - name: Upload Mochawesome reports chrome
         if: always()
@@ -48,7 +48,7 @@ jobs:
           working-directory: ./
         continue-on-error: true 
       - name: Run Cypress tests
-        run: npm run test:all:firefox
+        run: npm run test:parallel:firefox
         working-directory: ./
       - name: Upload Mochawesome reports firefox
         if: always()
