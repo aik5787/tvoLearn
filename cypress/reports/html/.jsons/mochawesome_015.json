@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-03T01:47:23.041Z",
+    "end": "2024-12-03T01:47:37.088Z",
+    "duration": 14047,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9cb8b79e-cb24-415d-983b-10b463aaf269",
+      "title": "",
+      "fullFile": "cypress/e2e/header/headerFunctionality.spec.cy.js",
+      "file": "cypress/e2e/header/headerFunctionality.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dad1e7fc-26cb-458f-959b-b9410f6f4659",
+          "title": "Header Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-002: Should display the logo and redirect to the Home Page on click",
+              "fullTitle": "Header Functionality TC-002: Should display the logo and redirect to the Home Page on click",
+              "timedOut": null,
+              "duration": 7241,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_header.default.logoImage.should(\"be.visible\").click();\ncy.title().should(\"eq\", _verificationData.default.englishTitle);",
+              "err": {},
+              "uuid": "4f712a4c-7282-49de-8a8a-7721f839e734",
+              "parentUUID": "dad1e7fc-26cb-458f-959b-b9410f6f4659",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-003: Should toggle between French and English languages",
+              "fullTitle": "Header Functionality TC-003: Should toggle between French and English languages",
+              "timedOut": null,
+              "duration": 2773,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_header.default.frenchLanguageLink.click();\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.frenchH1Text).should(\"be.visible\");\n_header.default.englishLanguageLink.click();\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.englishH1Text).should(\"be.visible\");",
+              "err": {},
+              "uuid": "6b1c011f-a75f-40da-b6d1-b4c920070d97",
+              "parentUUID": "dad1e7fc-26cb-458f-959b-b9410f6f4659",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-004: Should verify 'Learning Resources' button opens dropdown and links lead to correct pages",
+              "fullTitle": "Header Functionality TC-004: Should verify 'Learning Resources' button opens dropdown and links lead to correct pages",
+              "timedOut": null,
+              "duration": 3470,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_verificationData2.default.learningResourcesLinks.forEach(link => {\n  _header.default.learningResourcesButton.click();\n  _header.default.learningResourcesDropdown.should(\"be.visible\");\n  _header.default.getLearningResourcesDropdownLink(link.label).click();\n  cy.url().should(\"eq\", link.url);\n  cy.title().should(\"eq\", link.title);\n});",
+              "err": {},
+              "uuid": "db14db17-88cd-4251-a4cb-ca8e6331fe52",
+              "parentUUID": "dad1e7fc-26cb-458f-959b-b9410f6f4659",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4f712a4c-7282-49de-8a8a-7721f839e734",
+            "6b1c011f-a75f-40da-b6d1-b4c920070d97",
+            "db14db17-88cd-4251-a4cb-ca8e6331fe52"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13484,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "showPassed": true,
+        "html": false,
+        "json": true,
+        "alwaysGenerateReport": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

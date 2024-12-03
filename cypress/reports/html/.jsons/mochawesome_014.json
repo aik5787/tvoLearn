@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-03T01:44:24.406Z",
+    "end": "2024-12-03T01:44:29.406Z",
+    "duration": 5000,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e1373801-6ad6-4823-9991-ce7f0750b13a",
+      "title": "",
+      "fullFile": "cypress/e2e/learningResources/grades/grade1/Mathematics/number/learningActivity1.spec.cy.js",
+      "file": "cypress/e2e/learningResources/grades/grade1/Mathematics/number/learningActivity1.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "601ecdd0-ef5e-437e-9591-eaf4942d199d",
+          "title": "Learning 1 functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-010: Should load Learning Activity 1 Page with correct URL and Title",
+              "fullTitle": "Learning 1 functionality TC-010: Should load Learning Activity 1 Page with correct URL and Title",
+              "timedOut": null,
+              "duration": 2687,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should(\"eq\", _verificationData.default.learningActivity1Url);\ncy.title().should(\"eq\", _verificationData.default.learningActivity1Title);",
+              "err": {},
+              "uuid": "2d0b3920-826c-45ff-b197-64ddf207b5e7",
+              "parentUUID": "601ecdd0-ef5e-437e-9591-eaf4942d199d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-011: Should have a video player",
+              "fullTitle": "Learning 1 functionality TC-011: Should have a video player",
+              "timedOut": null,
+              "duration": 1809,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_learningActivity.default.iframe.should(\"exist\");\n_learningActivity.default.video.should(\"be.visible\");",
+              "err": {},
+              "uuid": "ca472932-ab6d-4357-b139-3f1e83dc1886",
+              "parentUUID": "601ecdd0-ef5e-437e-9591-eaf4942d199d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2d0b3920-826c-45ff-b197-64ddf207b5e7",
+            "ca472932-ab6d-4357-b139-3f1e83dc1886"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4496,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "showPassed": true,
+        "html": false,
+        "json": true,
+        "alwaysGenerateReport": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

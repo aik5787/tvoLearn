@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-02T21:58:32.881Z",
+    "end": "2024-12-02T21:58:38.766Z",
+    "duration": 5885,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "99053ba2-2a10-4048-814d-89ce8df90713",
+      "title": "",
+      "fullFile": "cypress/e2e/learningResources/grades/grade1/Mathematics/mathematics.spec.cy.js",
+      "file": "cypress/e2e/learningResources/grades/grade1/Mathematics/mathematics.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2ab6f471-248f-45ea-afd5-296c55add81a",
+          "title": "Grade 1 Mathematics functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-006: Should display 'Helpful Tips' link and navigate correctly on click",
+              "fullTitle": "Grade 1 Mathematics functionality TC-006: Should display 'Helpful Tips' link and navigate correctly on click",
+              "timedOut": null,
+              "duration": 2188,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_mathematicsPage.default.helpfulTipsLink.should(\"be.visible\").click();\ncy.url().should(\"eq\", _verificationData.default.helpfulTipsUrl);\ncy.title().should(\"eq\", _verificationData.default.helpfulTipsTitle);",
+              "err": {},
+              "uuid": "14d74265-19cb-4544-9dd1-4797d19056e0",
+              "parentUUID": "2ab6f471-248f-45ea-afd5-296c55add81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-007: Should verify Mathematics sections and its activities",
+              "fullTitle": "Grade 1 Mathematics functionality TC-007: Should verify Mathematics sections and its activities",
+              "timedOut": null,
+              "duration": 1893,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_verificationData.default.sections.forEach(section => {\n  cy.contains(\"button\", section.name).should(\"be.visible\").click();\n  section.activities.forEach(activity => {\n    cy.contains(activity).should(\"be.visible\");\n  });\n});",
+              "err": {},
+              "uuid": "b1f5cf22-0e0f-4e68-b575-a4f4e1415fa8",
+              "parentUUID": "2ab6f471-248f-45ea-afd5-296c55add81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-008: Should verify that video Resources For Learning have correct links",
+              "fullTitle": "Grade 1 Mathematics functionality TC-008: Should verify that video Resources For Learning have correct links",
+              "timedOut": null,
+              "duration": 780,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_mathematicsPage.default.videoLearningResource.should(\"have.length\", _verificationData.default.videoResourcesForLearningLinks.length);\n_mathematicsPage.default.videoLearningResource.each((element, index) => {\n  const expectedLink = _verificationData.default.videoResourcesForLearningLinks[index].href;\n  cy.wrap(element).should(\"have.attr\", \"href\", expectedLink);\n});",
+              "err": {},
+              "uuid": "484bb1c1-ae4d-42d3-b450-96145d095ee8",
+              "parentUUID": "2ab6f471-248f-45ea-afd5-296c55add81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-009: Should verify that game Resources For Learning have correct links",
+              "fullTitle": "Grade 1 Mathematics functionality TC-009: Should verify that game Resources For Learning have correct links",
+              "timedOut": null,
+              "duration": 721,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_mathematicsPage.default.gameLearningResource.should(\"have.length\", _verificationData.default.gameResourcesForLearningLinks.length);\n_mathematicsPage.default.gameLearningResource.each((element, index) => {\n  const expectedLink = _verificationData.default.gameResourcesForLearningLinks[index].href;\n  cy.wrap(element).should(\"have.attr\", \"href\", expectedLink);\n});",
+              "err": {},
+              "uuid": "a7bf0493-4805-4ddf-bee8-f365a34ee14f",
+              "parentUUID": "2ab6f471-248f-45ea-afd5-296c55add81a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "14d74265-19cb-4544-9dd1-4797d19056e0",
+            "b1f5cf22-0e0f-4e68-b575-a4f4e1415fa8",
+            "484bb1c1-ae4d-42d3-b450-96145d095ee8",
+            "a7bf0493-4805-4ddf-bee8-f365a34ee14f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5582,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "showPassed": true,
+        "html": false,
+        "json": true,
+        "alwaysGenerateReport": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

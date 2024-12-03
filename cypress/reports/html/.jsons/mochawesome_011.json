@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-03T01:44:06.053Z",
+    "end": "2024-12-03T01:44:07.549Z",
+    "duration": 1496,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f51821a6-0b14-42b1-ad95-7458b910fe84",
+      "title": "",
+      "fullFile": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
+      "file": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8056fe11-164d-413f-bc5f-19e02e8b8fc8",
+          "title": "Home Page Load",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-001: Should load the Home Page with correct title and hero text",
+              "fullTitle": "Home Page Load TC-001: Should load the Home Page with correct title and hero text",
+              "timedOut": null,
+              "duration": 1326,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should(\"eq\", _verificationData.default.englishTitle);\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.englishH1Text).should(\"be.visible\");",
+              "err": {},
+              "uuid": "3b2b60d4-d306-4cbc-8855-c3ff9d2cc7de",
+              "parentUUID": "8056fe11-164d-413f-bc5f-19e02e8b8fc8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3b2b60d4-d306-4cbc-8855-c3ff9d2cc7de"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1326,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "showPassed": true,
+        "html": false,
+        "json": true,
+        "alwaysGenerateReport": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

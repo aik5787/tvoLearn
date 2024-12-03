@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-02T22:33:59.722Z",
+    "end": "2024-12-02T22:34:06.823Z",
+    "duration": 7101,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e8c7bec8-8561-4519-91c3-1cc4a270ffe9",
+      "title": "",
+      "fullFile": "cypress/e2e/learningResources/grades/grade1/grade1.spec.cy.js",
+      "file": "cypress/learningResources/grades/grade1/grade1.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "115f42c5-2bb4-41d0-bb66-ea2a48336008",
+          "title": "Grade 1 functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-005: Should display frames and navigate correctly when clicking on each",
+              "fullTitle": "Grade 1 functionality TC-005: Should display frames and navigate correctly when clicking on each",
+              "timedOut": null,
+              "duration": 6656,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_verificationData.default.subjects.forEach(subjectData => {\n  cy.contains(subjectData.subject).should(\"be.visible\").click();\n  cy.url().should(\"eq\", subjectData.url);\n  cy.title().should(\"eq\", subjectData.title);\n  cy.go(\"back\");\n});",
+              "err": {},
+              "uuid": "492914f4-8053-4355-8afb-d0655790b07d",
+              "parentUUID": "115f42c5-2bb4-41d0-bb66-ea2a48336008",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "492914f4-8053-4355-8afb-d0655790b07d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6656,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "showPassed": true,
+        "html": false,
+        "json": true,
+        "alwaysGenerateReport": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
