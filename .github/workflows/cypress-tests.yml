@@ -29,7 +29,7 @@ jobs:
 
       # Устанавливаем зависимости
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
       # Запускаем Cypress тесты
       - uses: cypress-io/github-action@v6
