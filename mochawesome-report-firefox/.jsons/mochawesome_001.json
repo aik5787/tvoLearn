@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-11-19T05:49:29.517Z",
-    "end": "2024-11-19T05:49:37.971Z",
-    "duration": 8454,
+    "start": "2024-12-04T00:23:24.033Z",
+    "end": "2024-12-04T00:23:47.532Z",
+    "duration": 23499,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "598903ce-3d70-474c-a9d0-aaa6d412174e",
+      "uuid": "c0fa22cf-f7c4-4cbc-99d2-c7e5aca1c82a",
       "title": "",
       "fullFile": "cypress/e2e/learningResources/grades/grade1/grade1.spec.cy.js",
       "file": "cypress/e2e/learningResources/grades/grade1/grade1.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8b85c08c-ffb8-49a9-94a9-f42182fd5143",
+          "uuid": "f80c7e14-5b58-4556-84c6-d8397e99d04a",
           "title": "Grade 1 functionality",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "TC-005: Should display frames and navigate correctly when clicking on each",
               "fullTitle": "Grade 1 functionality TC-005: Should display frames and navigate correctly when clicking on each",
               "timedOut": null,
-              "duration": 8310,
+              "duration": 22769,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "_verificationData.default.subjects.forEach(subjectData => {\n  cy.contains(subjectData.subject).should(\"be.visible\").click();\n  cy.url().should(\"eq\", subjectData.url);\n  cy.title().should(\"eq\", subjectData.title);\n  cy.go(\"back\");\n});",
               "err": {},
-              "uuid": "dbe77011-a85c-46ba-8c5f-5f8c98b2c087",
-              "parentUUID": "8b85c08c-ffb8-49a9-94a9-f42182fd5143",
+              "uuid": "715370bb-bc23-47b4-880b-0f759206a546",
+              "parentUUID": "f80c7e14-5b58-4556-84c6-d8397e99d04a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dbe77011-a85c-46ba-8c5f-5f8c98b2c087"
+            "715370bb-bc23-47b4-880b-0f759206a546"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8310,
+          "duration": 22769,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-12-04T00:24:01.317Z",
-    "end": "2024-12-04T00:24:06.367Z",
-    "duration": 5050,
+    "start": "2024-12-03T01:48:10.054Z",
+    "end": "2024-12-03T01:48:15.450Z",
+    "duration": 5396,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1a5c4dff-c2c1-4cf5-8b06-d1e6c5bf81d2",
+      "uuid": "a3ec273f-ee66-4cca-b50d-e671896863f5",
       "title": "",
       "fullFile": "cypress/e2e/learningResources/grades/grade1/Mathematics/number/learningActivity1.spec.cy.js",
       "file": "cypress/e2e/learningResources/grades/grade1/Mathematics/number/learningActivity1.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "de94f661-045d-40e2-8b5d-68680cdc5405",
+          "uuid": "35c32a9f-ef71-46c4-96d0-5b998a816e40",
           "title": "Learning 1 functionality",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "TC-010: Should load Learning Activity 1 Page with correct URL and Title",
               "fullTitle": "Learning 1 functionality TC-010: Should load Learning Activity 1 Page with correct URL and Title",
               "timedOut": null,
-              "duration": 3212,
+              "duration": 2644,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.url().should(\"eq\", _verificationData.default.learningActivity1Url);\ncy.title().should(\"eq\", _verificationData.default.learningActivity1Title);",
               "err": {},
-              "uuid": "31d92738-6d3d-4eec-9c1d-6f8ec66d06d0",
-              "parentUUID": "de94f661-045d-40e2-8b5d-68680cdc5405",
+              "uuid": "ae046550-210d-4bee-b3bc-80665a6d78fd",
+              "parentUUID": "35c32a9f-ef71-46c4-96d0-5b998a816e40",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "TC-011: Should have a video player",
               "fullTitle": "Learning 1 functionality TC-011: Should have a video player",
               "timedOut": null,
-              "duration": 1490,
+              "duration": 1845,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "_learningActivity.default.iframe.should(\"exist\");\n_learningActivity.default.video.should(\"be.visible\");",
               "err": {},
-              "uuid": "40bd9589-fbf5-49c5-8ce7-a0e0921958a7",
-              "parentUUID": "de94f661-045d-40e2-8b5d-68680cdc5405",
+              "uuid": "0e0d2ba9-4345-4c19-93e6-8de7e16f07c1",
+              "parentUUID": "35c32a9f-ef71-46c4-96d0-5b998a816e40",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "31d92738-6d3d-4eec-9c1d-6f8ec66d06d0",
-            "40bd9589-fbf5-49c5-8ce7-a0e0921958a7"
+            "ae046550-210d-4bee-b3bc-80665a6d78fd",
+            "0e0d2ba9-4345-4c19-93e6-8de7e16f07c1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4702,
+          "duration": 4489,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -113,12 +113,12 @@
     },
     "marge": {
       "options": {
-        "reportDir": "mochawesome-report-firefox/.jsons",
         "overwrite": false,
         "showPassed": true,
         "html": false,
         "json": true,
-        "alwaysGenerateReport": true
+        "alwaysGenerateReport": true,
+        "reportDir": "cypress/reports/html/.jsons"
       },
       "version": "6.2.0"
     }

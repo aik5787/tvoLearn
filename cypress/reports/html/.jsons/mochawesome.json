@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-12-04T00:23:24.204Z",
-    "end": "2024-12-04T00:23:41.800Z",
-    "duration": 17596,
+    "start": "2024-12-02T21:58:10.223Z",
+    "end": "2024-12-02T21:58:12.115Z",
+    "duration": 1892,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bd649bc2-2e41-4f5d-9b06-b84cd66a0729",
+      "uuid": "76bbae3d-310e-4a08-89d3-2123c392b72a",
       "title": "",
       "fullFile": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
       "file": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "517f4f10-a97f-4556-a790-756ef81c2605",
+          "uuid": "92430f48-674c-48fc-aba1-1fce44e48603",
           "title": "Home Page Load",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "TC-001: Should load the Home Page with correct title and hero text",
               "fullTitle": "Home Page Load TC-001: Should load the Home Page with correct title and hero text",
               "timedOut": null,
-              "duration": 13270,
+              "duration": 1820,
               "state": "passed",
-              "speed": "slow",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.title().should(\"eq\", _verificationData.default.englishTitle);\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.englishH1Text).should(\"be.visible\");",
               "err": {},
-              "uuid": "cc3455c7-76e6-4720-956b-3f23aaf90241",
-              "parentUUID": "517f4f10-a97f-4556-a790-756ef81c2605",
+              "uuid": "5753c6fc-6540-4d9d-a845-3b0fb9d353ed",
+              "parentUUID": "92430f48-674c-48fc-aba1-1fce44e48603",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cc3455c7-76e6-4720-956b-3f23aaf90241"
+            "5753c6fc-6540-4d9d-a845-3b0fb9d353ed"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13270,
+          "duration": 1820,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,12 +94,12 @@
     },
     "marge": {
       "options": {
-        "reportDir": "mochawesome-report-firefox/.jsons",
         "overwrite": false,
         "showPassed": true,
         "html": false,
         "json": true,
-        "alwaysGenerateReport": true
+        "alwaysGenerateReport": true,
+        "reportDir": "cypress/reports/html/.jsons"
       },
       "version": "6.2.0"
     }

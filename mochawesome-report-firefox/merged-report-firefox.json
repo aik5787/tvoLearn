@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2024-11-19T05:49:29.517Z",
-    "end": "2024-11-19T05:49:51.477Z",
-    "duration": 21960
+    "start": "2024-12-04T00:23:24.033Z",
+    "end": "2024-12-04T00:24:06.367Z",
+    "duration": 42334
   },
   "results": [
     {
-      "uuid": "98fb6d13-15df-4f7f-9659-fc9f45420213",
+      "uuid": "bd649bc2-2e41-4f5d-9b06-b84cd66a0729",
       "title": "",
       "fullFile": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
       "file": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8b46d9f2-3b09-42e5-b324-74b1f78c9fb3",
+          "uuid": "517f4f10-a97f-4556-a790-756ef81c2605",
           "title": "Home Page Load",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "TC-001: Should load the Home Page with correct title and hero text",
               "fullTitle": "Home Page Load TC-001: Should load the Home Page with correct title and hero text",
               "timedOut": null,
-              "duration": 4578,
+              "duration": 13270,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.title().should(\"eq\", _verificationData.default.englishTitle);\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.englishH1Text).should(\"be.visible\");",
               "err": {},
-              "uuid": "dcb56be8-d6da-40be-9d0e-a9d56d912cff",
-              "parentUUID": "8b46d9f2-3b09-42e5-b324-74b1f78c9fb3",
+              "uuid": "cc3455c7-76e6-4720-956b-3f23aaf90241",
+              "parentUUID": "517f4f10-a97f-4556-a790-756ef81c2605",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dcb56be8-d6da-40be-9d0e-a9d56d912cff"
+            "cc3455c7-76e6-4720-956b-3f23aaf90241"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4578,
+          "duration": 13270,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "598903ce-3d70-474c-a9d0-aaa6d412174e",
+      "uuid": "c0fa22cf-f7c4-4cbc-99d2-c7e5aca1c82a",
       "title": "",
       "fullFile": "cypress/e2e/learningResources/grades/grade1/grade1.spec.cy.js",
       "file": "cypress/e2e/learningResources/grades/grade1/grade1.spec.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8b85c08c-ffb8-49a9-94a9-f42182fd5143",
+          "uuid": "f80c7e14-5b58-4556-84c6-d8397e99d04a",
           "title": "Grade 1 functionality",
           "fullFile": "",
           "file": "",
@@ -96,29 +96,29 @@
               "title": "TC-005: Should display frames and navigate correctly when clicking on each",
               "fullTitle": "Grade 1 functionality TC-005: Should display frames and navigate correctly when clicking on each",
               "timedOut": null,
-              "duration": 8310,
+              "duration": 22769,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "_verificationData.default.subjects.forEach(subjectData => {\n  cy.contains(subjectData.subject).should(\"be.visible\").click();\n  cy.url().should(\"eq\", subjectData.url);\n  cy.title().should(\"eq\", subjectData.title);\n  cy.go(\"back\");\n});",
               "err": {},
-              "uuid": "dbe77011-a85c-46ba-8c5f-5f8c98b2c087",
-              "parentUUID": "8b85c08c-ffb8-49a9-94a9-f42182fd5143",
+              "uuid": "715370bb-bc23-47b4-880b-0f759206a546",
+              "parentUUID": "f80c7e14-5b58-4556-84c6-d8397e99d04a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dbe77011-a85c-46ba-8c5f-5f8c98b2c087"
+            "715370bb-bc23-47b4-880b-0f759206a546"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8310,
+          "duration": 22769,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +134,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "76de1758-44b1-4613-b71e-7f6a6587a280",
+      "uuid": "7033d573-cd7e-413a-9795-feb53d111d2d",
       "title": "",
       "fullFile": "cypress/e2e/header/headerFunctionality.spec.cy.js",
       "file": "cypress/e2e/header/headerFunctionality.spec.cy.js",
@@ -143,7 +143,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "82c51058-9442-41b9-a90c-e3b1d2643067",
+          "uuid": "2ef340fd-b44a-4236-ab3c-c64607ebbebd",
           "title": "Header Functionality",
           "fullFile": "",
           "file": "",
@@ -154,17 +154,17 @@
               "title": "TC-002: Should display the logo and redirect to the Home Page on click",
               "fullTitle": "Header Functionality TC-002: Should display the logo and redirect to the Home Page on click",
               "timedOut": null,
-              "duration": 7184,
+              "duration": 20420,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "_header.default.logoImage.should(\"be.visible\").click();\ncy.title().should(\"eq\", _verificationData.default.englishTitle);",
               "err": {},
-              "uuid": "d956f893-3427-45c9-ae36-5e3da119f2d3",
-              "parentUUID": "82c51058-9442-41b9-a90c-e3b1d2643067",
+              "uuid": "24d25539-7d70-4fdf-9fe1-856a48cce324",
+              "parentUUID": "2ef340fd-b44a-4236-ab3c-c64607ebbebd",
               "isHook": false,
               "skipped": false
             },
@@ -172,7 +172,7 @@
               "title": "TC-003: Should toggle between French and English languages",
               "fullTitle": "Header Functionality TC-003: Should toggle between French and English languages",
               "timedOut": null,
-              "duration": 2227,
+              "duration": 3135,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -181,8 +181,8 @@
               "context": null,
               "code": "_header.default.frenchLanguageLink.click();\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.frenchH1Text).should(\"be.visible\");\n_header.default.englishLanguageLink.click();\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.englishH1Text).should(\"be.visible\");",
               "err": {},
-              "uuid": "8ab34dc4-e7df-4d92-a20b-b701aa67e98c",
-              "parentUUID": "82c51058-9442-41b9-a90c-e3b1d2643067",
+              "uuid": "6d00000a-2cff-4871-b1eb-b3a7209074e5",
+              "parentUUID": "2ef340fd-b44a-4236-ab3c-c64607ebbebd",
               "isHook": false,
               "skipped": false
             },
@@ -190,31 +190,31 @@
               "title": "TC-004: Should verify 'Learning Resources' button opens dropdown and links lead to correct pages",
               "fullTitle": "Header Functionality TC-004: Should verify 'Learning Resources' button opens dropdown and links lead to correct pages",
               "timedOut": null,
-              "duration": 2724,
+              "duration": 3631,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "_verificationData2.default.learningResourcesLinks.forEach(link => {\n  _header.default.learningResourcesButton.click();\n  _header.default.learningResourcesDropdown.should(\"be.visible\");\n  _header.default.getLearningResourcesDropdownLink(link.label).click();\n  cy.url({\n    timeout: 10000\n  }).should(\"eq\", link.url);\n  cy.title({\n    timeout: 10000\n  }).should(\"eq\", link.title);\n});",
+              "code": "_verificationData2.default.learningResourcesLinks.forEach(link => {\n  _header.default.learningResourcesButton.click();\n  _header.default.learningResourcesDropdown.should(\"be.visible\");\n  _header.default.getLearningResourcesDropdownLink(link.label).click();\n  cy.url().should(\"eq\", link.url);\n  cy.title().should(\"eq\", link.title);\n});",
               "err": {},
-              "uuid": "fe8e3ffc-9d73-4dbb-a003-9ffe403eddc4",
-              "parentUUID": "82c51058-9442-41b9-a90c-e3b1d2643067",
+              "uuid": "4728f16b-5e24-404a-806d-e827047b45f2",
+              "parentUUID": "2ef340fd-b44a-4236-ab3c-c64607ebbebd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d956f893-3427-45c9-ae36-5e3da119f2d3",
-            "8ab34dc4-e7df-4d92-a20b-b701aa67e98c",
-            "fe8e3ffc-9d73-4dbb-a003-9ffe403eddc4"
+            "24d25539-7d70-4fdf-9fe1-856a48cce324",
+            "6d00000a-2cff-4871-b1eb-b3a7209074e5",
+            "4728f16b-5e24-404a-806d-e827047b45f2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12135,
+          "duration": 27186,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -230,7 +230,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "6d42f907-2be5-4f81-b8a8-d4f751b990e0",
+      "uuid": "28ed6d7f-e4ba-4256-8734-559c7b8e0806",
       "title": "",
       "fullFile": "cypress/e2e/learningResources/grades/grade1/Mathematics/mathematics.spec.cy.js",
       "file": "cypress/e2e/learningResources/grades/grade1/Mathematics/mathematics.spec.cy.js",
@@ -239,7 +239,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b4906a99-787b-4a54-9d6e-6db3843d5e08",
+          "uuid": "1e050972-8786-41ac-930f-a43e00cc222d",
           "title": "Grade 1 Mathematics functionality",
           "fullFile": "",
           "file": "",
@@ -250,17 +250,17 @@
               "title": "TC-006: Should display 'Helpful Tips' link and navigate correctly on click",
               "fullTitle": "Grade 1 Mathematics functionality TC-006: Should display 'Helpful Tips' link and navigate correctly on click",
               "timedOut": null,
-              "duration": 3377,
+              "duration": 5918,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "_mathematicsPage.default.helpfulTipsLink.should(\"be.visible\").click();\ncy.url().should(\"eq\", _verificationData.default.helpfulTipsUrl);\ncy.title().should(\"eq\", _verificationData.default.helpfulTipsTitle);",
               "err": {},
-              "uuid": "78206e67-7bc2-48b5-85be-a5993777de8f",
-              "parentUUID": "b4906a99-787b-4a54-9d6e-6db3843d5e08",
+              "uuid": "988f3f65-bed8-4061-98e7-5215b7ccbd03",
+              "parentUUID": "1e050972-8786-41ac-930f-a43e00cc222d",
               "isHook": false,
               "skipped": false
             },
@@ -268,7 +268,7 @@
               "title": "TC-007: Should verify Mathematics sections and its activities",
               "fullTitle": "Grade 1 Mathematics functionality TC-007: Should verify Mathematics sections and its activities",
               "timedOut": null,
-              "duration": 1874,
+              "duration": 2465,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -277,8 +277,8 @@
               "context": null,
               "code": "_verificationData.default.sections.forEach(section => {\n  cy.contains(\"button\", section.name).should(\"be.visible\").click();\n  section.activities.forEach(activity => {\n    cy.contains(activity).should(\"be.visible\");\n  });\n});",
               "err": {},
-              "uuid": "277afe70-a743-4cbe-8d10-0dbf0cd27c1c",
-              "parentUUID": "b4906a99-787b-4a54-9d6e-6db3843d5e08",
+              "uuid": "8d08c316-d312-4819-ad58-886c8a90d3d2",
+              "parentUUID": "1e050972-8786-41ac-930f-a43e00cc222d",
               "isHook": false,
               "skipped": false
             },
@@ -286,7 +286,7 @@
               "title": "TC-008: Should verify that video Resources For Learning have correct links",
               "fullTitle": "Grade 1 Mathematics functionality TC-008: Should verify that video Resources For Learning have correct links",
               "timedOut": null,
-              "duration": 1052,
+              "duration": 1047,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -295,8 +295,8 @@
               "context": null,
               "code": "_mathematicsPage.default.videoLearningResource.should(\"have.length\", _verificationData.default.videoResourcesForLearningLinks.length);\n_mathematicsPage.default.videoLearningResource.each((element, index) => {\n  const expectedLink = _verificationData.default.videoResourcesForLearningLinks[index].href;\n  cy.wrap(element).should(\"have.attr\", \"href\", expectedLink);\n});",
               "err": {},
-              "uuid": "00b9dde4-1c7b-48ff-91ee-fd8f12f76c27",
-              "parentUUID": "b4906a99-787b-4a54-9d6e-6db3843d5e08",
+              "uuid": "c32d6f6a-438b-429e-a2c5-5a2d1946b22d",
+              "parentUUID": "1e050972-8786-41ac-930f-a43e00cc222d",
               "isHook": false,
               "skipped": false
             },
@@ -304,7 +304,7 @@
               "title": "TC-009: Should verify that game Resources For Learning have correct links",
               "fullTitle": "Grade 1 Mathematics functionality TC-009: Should verify that game Resources For Learning have correct links",
               "timedOut": null,
-              "duration": 1011,
+              "duration": 811,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -313,23 +313,23 @@
               "context": null,
               "code": "_mathematicsPage.default.gameLearningResource.should(\"have.length\", _verificationData.default.gameResourcesForLearningLinks.length);\n_mathematicsPage.default.gameLearningResource.each((element, index) => {\n  const expectedLink = _verificationData.default.gameResourcesForLearningLinks[index].href;\n  cy.wrap(element).should(\"have.attr\", \"href\", expectedLink);\n});",
               "err": {},
-              "uuid": "2bc12a01-5e26-49f6-91a3-4fae2fe55d41",
-              "parentUUID": "b4906a99-787b-4a54-9d6e-6db3843d5e08",
+              "uuid": "05568ea4-2e01-4685-ab90-fe5cb128460c",
+              "parentUUID": "1e050972-8786-41ac-930f-a43e00cc222d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "78206e67-7bc2-48b5-85be-a5993777de8f",
-            "277afe70-a743-4cbe-8d10-0dbf0cd27c1c",
-            "00b9dde4-1c7b-48ff-91ee-fd8f12f76c27",
-            "2bc12a01-5e26-49f6-91a3-4fae2fe55d41"
+            "988f3f65-bed8-4061-98e7-5215b7ccbd03",
+            "8d08c316-d312-4819-ad58-886c8a90d3d2",
+            "c32d6f6a-438b-429e-a2c5-5a2d1946b22d",
+            "05568ea4-2e01-4685-ab90-fe5cb128460c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7314,
+          "duration": 10241,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -345,7 +345,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "bbec33ba-2a6a-4957-ac3a-3699f2c10a09",
+      "uuid": "1a5c4dff-c2c1-4cf5-8b06-d1e6c5bf81d2",
       "title": "",
       "fullFile": "cypress/e2e/learningResources/grades/grade1/Mathematics/number/learningActivity1.spec.cy.js",
       "file": "cypress/e2e/learningResources/grades/grade1/Mathematics/number/learningActivity1.spec.cy.js",
@@ -354,7 +354,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6782dc36-4f7f-4000-a1f9-7eee6d5aceb0",
+          "uuid": "de94f661-045d-40e2-8b5d-68680cdc5405",
           "title": "Learning 1 functionality",
           "fullFile": "",
           "file": "",
@@ -365,7 +365,7 @@
               "title": "TC-010: Should load Learning Activity 1 Page with correct URL and Title",
               "fullTitle": "Learning 1 functionality TC-010: Should load Learning Activity 1 Page with correct URL and Title",
               "timedOut": null,
-              "duration": 2768,
+              "duration": 3212,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -374,8 +374,8 @@
               "context": null,
               "code": "cy.url().should(\"eq\", _verificationData.default.learningActivity1Url);\ncy.title().should(\"eq\", _verificationData.default.learningActivity1Title);",
               "err": {},
-              "uuid": "556c657e-22b3-433f-97d9-129207239ca4",
-              "parentUUID": "6782dc36-4f7f-4000-a1f9-7eee6d5aceb0",
+              "uuid": "31d92738-6d3d-4eec-9c1d-6f8ec66d06d0",
+              "parentUUID": "de94f661-045d-40e2-8b5d-68680cdc5405",
               "isHook": false,
               "skipped": false
             },
@@ -383,7 +383,7 @@
               "title": "TC-011: Should have a video player",
               "fullTitle": "Learning 1 functionality TC-011: Should have a video player",
               "timedOut": null,
-              "duration": 1168,
+              "duration": 1490,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -392,21 +392,21 @@
               "context": null,
               "code": "_learningActivity.default.iframe.should(\"exist\");\n_learningActivity.default.video.should(\"be.visible\");",
               "err": {},
-              "uuid": "85fab1e1-dca6-42e9-a7f5-9b56ba6011d6",
-              "parentUUID": "6782dc36-4f7f-4000-a1f9-7eee6d5aceb0",
+              "uuid": "40bd9589-fbf5-49c5-8ce7-a0e0921958a7",
+              "parentUUID": "de94f661-045d-40e2-8b5d-68680cdc5405",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "556c657e-22b3-433f-97d9-129207239ca4",
-            "85fab1e1-dca6-42e9-a7f5-9b56ba6011d6"
+            "31d92738-6d3d-4eec-9c1d-6f8ec66d06d0",
+            "40bd9589-fbf5-49c5-8ce7-a0e0921958a7"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3936,
+          "duration": 4702,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
