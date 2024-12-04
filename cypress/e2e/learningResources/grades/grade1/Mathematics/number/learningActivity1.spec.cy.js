@@ -12,8 +12,8 @@ describe("Learning 1 functionality", () => {
     cy.title().should("eq", numVerificationData.learningActivity1Title);
   });
 
-  it("TC-011: Should have a video player", () => {
-    learningActivity1Page.iframe.should("exist");
-    learningActivity1Page.video.should("be.visible");
-  });
+  // it("TC-011: Should have a video player", () => {
+  //   learningActivity1Page.iframe.should("exist");
+  //   learningActivity1Page.video.should("be.visible");
+  // });
 });

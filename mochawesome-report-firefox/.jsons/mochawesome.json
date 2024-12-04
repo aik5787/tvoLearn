@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-11-19T05:49:29.583Z",
-    "end": "2024-11-19T05:49:35.505Z",
-    "duration": 5922,
+    "start": "2024-12-04T00:23:24.204Z",
+    "end": "2024-12-04T00:23:41.800Z",
+    "duration": 17596,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "98fb6d13-15df-4f7f-9659-fc9f45420213",
+      "uuid": "bd649bc2-2e41-4f5d-9b06-b84cd66a0729",
       "title": "",
       "fullFile": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
       "file": "cypress/e2e/homePage/homePageLoad.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8b46d9f2-3b09-42e5-b324-74b1f78c9fb3",
+          "uuid": "517f4f10-a97f-4556-a790-756ef81c2605",
           "title": "Home Page Load",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "TC-001: Should load the Home Page with correct title and hero text",
               "fullTitle": "Home Page Load TC-001: Should load the Home Page with correct title and hero text",
               "timedOut": null,
-              "duration": 4578,
+              "duration": 13270,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.title().should(\"eq\", _verificationData.default.englishTitle);\n_homePage.default.heroTitle.should(\"have.text\", _verificationData.default.englishH1Text).should(\"be.visible\");",
               "err": {},
-              "uuid": "dcb56be8-d6da-40be-9d0e-a9d56d912cff",
-              "parentUUID": "8b46d9f2-3b09-42e5-b324-74b1f78c9fb3",
+              "uuid": "cc3455c7-76e6-4720-956b-3f23aaf90241",
+              "parentUUID": "517f4f10-a97f-4556-a790-756ef81c2605",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dcb56be8-d6da-40be-9d0e-a9d56d912cff"
+            "cc3455c7-76e6-4720-956b-3f23aaf90241"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4578,
+          "duration": 13270,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
