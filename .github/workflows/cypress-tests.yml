@@ -34,7 +34,7 @@ jobs:
       # Запускаем Cypress тесты
       - uses: cypress-io/github-action@v6
         with:
-          working-directory: ./cypress/e2e
+          working-directory: ./
           browser: ${{ matrix.browser }}
         env:
           CYPRESS_INSTALL_BINARY: 0
