@@ -29,12 +29,12 @@ jobs:
 
       # Устанавливаем зависимости
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
       # Запускаем Cypress тесты
       - uses: cypress-io/github-action@v6
         with:
-          working-directory: examples/basic-mini
+          working-directory: ./cypress/e2e
           browser: ${{ matrix.browser }}
         env:
           CYPRESS_INSTALL_BINARY: 0
